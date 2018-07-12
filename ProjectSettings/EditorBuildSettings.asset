@@ -4,4 +4,7 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Sceenes/paddle_ball.unity
+    guid: f0c9eb38eb34f4a42ae3fb5826409b5b
