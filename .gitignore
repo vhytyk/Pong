@@ -4,6 +4,7 @@ Temp/
 pong_Data/
 obj/
 pong.exe
+build/
 
 # Windows thumbnail cache files
 Thumbs.db

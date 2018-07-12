@@ -7,12 +7,11 @@ public class Ball : MonoBehaviour
     public float BallVelocity = 1000;
     private Rigidbody rb;
     private bool IsPlay;
-
     void Awake()
     {
         rb = gameObject.gameObject.GetComponent<Rigidbody>();
     }
-	
+
 	void Update ()
     {
         if (Input.GetKeyDown(KeyCode.Return) && IsPlay == false)
@@ -25,6 +24,11 @@ public class Ball : MonoBehaviour
                 0));
 
         }
-
     }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        GetComponent<AudioSource>().Play();
+    }
+
 }

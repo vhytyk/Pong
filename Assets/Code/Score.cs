@@ -22,10 +22,12 @@ public class Score : MonoBehaviour
         if (other.tag == "Ball")
         {
             score++;
+            GetComponent<AudioSource>().Play();
             Destroy(ball);
             Instantiate(BallPref,
                 new Vector3(PaddleObject.transform.position.x + 2, PaddleObject.transform.position.y, 0),
                 Quaternion.identity).transform.parent = PaddleObject;
+            
         }
     }
 }
