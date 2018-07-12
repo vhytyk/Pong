@@ -1,3 +1,10 @@
+# Unity files
+Library/
+Temp/
+pong_Data/
+obj/
+pong.exe
+
 # Windows thumbnail cache files
 Thumbs.db
 ehthumbs.db
